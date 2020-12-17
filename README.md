@@ -18,6 +18,7 @@
 ### zsh
 - .zshrc
 - theme (place it into `.oh-my-zsh/custom/themes`)
+- install_zsh_plugin.sh (required to install zsh and oh-my-zsh first)
 
 ### bash
 - .bashrc
