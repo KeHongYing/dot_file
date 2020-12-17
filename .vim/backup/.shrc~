@@ -1,0 +1,65 @@
+# This file should contain aliases, shell variables, and functios,
+# those cannot be passed to child process.
+#
+# Ref to .profile for details
+#
+
+## Standard Aliases
+alias mv='mv -i'
+alias cp='cp -i'
+alias rm='rm -i -f'
+alias dir='ls -lg|more'
+alias vi='vim'
+alias cls='clear'
+alias telnet='telnet -8'
+os=${OSTYPE/[^a-z]*/}
+
+case "$os" in
+"freebsd")
+	alias ls='ls -FG'
+	export LSCOLORS='ExGxFxdxCxDxDxhbadacad'
+	;;
+"linux")
+	alias ls='ls --color -F'
+	;;
+"solaris")
+	alias ls='ls --color --show-control-chars -F'
+	alias ping="ping -s"
+	;;
+esac
+
+## Extra aliases
+#
+alias grep=egrep
+alias talk=ytalk
+
+## Shell style
+#
+if [ $SHELL = "/bin/sh" ]; then
+  if [ "$WINDOW" != "" ]; then
+    export PS1="$LOGNAME@`hostname` [W$WINDOW] "
+  else 
+    export PS1="$LOGNAME@`hostname`$ "
+  fi
+else 
+  if [ "$WINDOW" != "" ]; then
+    export PS1="$LOGNAME@\h {\w} [W$WINDOW] "
+  else
+    export PS1="\u@\h [\w] "
+  fi
+fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/tmp2/b06902074/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/tmp2/b06902074/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/tmp2/b06902074/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/tmp2/b06902074/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<

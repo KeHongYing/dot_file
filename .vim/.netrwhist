@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/usr/local/pulse'
+let g:netrw_dirhist_8='/home/kehongying/.vim'
+let g:netrw_dirhist_7='/home/kehongying/.wine'
+let g:netrw_dirhist_6='/nfs/undergrad/06/b06902074/.vim_backup'
+let g:netrw_dirhist_5='/tmp3/b06902074/project'
+let g:netrw_dirhist_4='/nfs/undergrad/06/b06902074/test'
+let g:netrw_dirhist_3='/nfs/undergrad/06/b06902074/SP/SP_hw4'
+let g:netrw_dirhist_2='/tmp3/b06902074/VR/srgan/test'
+let g:netrw_dirhist_1='/tmp3/b06902024/SDML_final'
