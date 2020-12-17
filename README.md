@@ -12,11 +12,11 @@
 ### Vim & YouCompleteMe
 - .vimrc
 - .vim
-- .ycm_extra_conf.py
+- .ycm\_extra\_conf.py
 
 ### zsh
 - .zshrc
-- .oh-my-zsh
+- theme (place it into `.oh-my-zsh/custom/themes`)
 
 ### bash
 - .bashrc
