@@ -1,9 +1,10 @@
 # Dot File
 
 ## For Arch Linux
-### Chinese Environment & Input
+### Chinese Environment & Input(fcitx)
 - .xinitrc
 - .pam\_environment
+- default.custom.yaml
 
 ### Touchpad Gesture
 - libinput-gestures.conf
