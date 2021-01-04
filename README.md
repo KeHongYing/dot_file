@@ -25,3 +25,6 @@
 
 ### tmux
 - .tmux.conf
+
+### peda
+- install_peda.sh
