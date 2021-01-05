@@ -116,16 +116,6 @@ function cmlab()
 	ssh cml$1.csie.ntu.edu.tw
 }
 
-function upload()
-{
-	scp -r $1 "b06902074@140.112.30.38:~/$2"
-}
-
-function Download()
-{
-	scp -r "b06902074@140.112.30.38:~/$1 ."
-}
-
 function gpu()
 {
 	ssh b06902074@meow$1.csie.ntu.edu.tw
