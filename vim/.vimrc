@@ -2,7 +2,7 @@ set encoding=utf-8
 set fileencodings=utf-8,cp950
 
 let g:ycm_confirm_extra_conf = 0
-let g:ycm_global_ycm_extra_conf = "/home/kehongying/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "$HOME/.ycm_extra_conf.py"
 let g:ycm_server_python_interpreter = '/usr/bin/python3.9'
 let g:ycm_python_sys_path = []
 let g:ycm_extra_conf_vim_data = [
